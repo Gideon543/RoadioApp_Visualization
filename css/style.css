@@ -1,0 +1,15 @@
+.container {
+	height: 500px;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	border: 1px solid blue;
+}
+
+/* Set the height of the map container */
+ #map-container {
+     height: 500px;
+ }
+		
