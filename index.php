@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Google Maps API Example</title>
-    <script type="text/javascript" src="javascript/google_maps.js"></script>
+    <script type="text/javascript" src="javascript/segment_maps.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <!-- Load the Google Maps API script -->
     <script
