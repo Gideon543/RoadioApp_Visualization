@@ -15,12 +15,20 @@ fetch('http://localhost/RoadioApp_Server_Code/APIs/GetRoadSegments_API.php?apica
 
  // Defining the initializing function for the map
 function initMap(jsonArray) {
+
   // Set the center of the map
   const center = {lat:5.614818, lng: -0.205874};
   // Create a new map instance
   const map = new google.maps.Map(document.getElementById("map-container"),{
     zoom: 18,
     center: center,
+    styles: [
+      {
+        featureType: "poi",
+        elementType: "labels",
+        stylers: [{ visibility: "off" }]
+      }
+    ]
   });
 
 
@@ -41,11 +49,10 @@ function initMap(jsonArray) {
     if (segment_surface_quality == 6){
 		const polygon = new google.maps.Polygon({
 		  paths: polygonCoords,
-		  strokeColor: "#7FFF00",
+		  strokeColor: "#00ff00",
 		  strokeOpacity: 0.8,
 		  strokeWeight: 2,
-		  fillColor: "#7FFF00",
-		  fillOpacity: 0.35
+		  fillColor: "#00ff00",
 		});
 		// Add the polygon to the map
 		polygon.setMap(map);
