@@ -20,7 +20,7 @@ function initMap(jsonArray) {
   const center = {lat:5.614818, lng: -0.205874};
   // Create a new map instance
   const map = new google.maps.Map(document.getElementById("map-container"),{
-    zoom: 18,
+    zoom: 15,
     center: center,
     styles: [
       {
@@ -30,7 +30,6 @@ function initMap(jsonArray) {
       }
     ]
   });
-
 
   for (let i = 0; i < jsonArray.length; i++) {
 	// Get surface quality
